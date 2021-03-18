@@ -382,6 +382,56 @@ nav .register li a {
     .popular-container {
         border-radius: 2rem;
         margin: 50px;
+        width: 25%;
     }
 }
 
+.popular-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popular-title i {
+    font-size: 1.4rem;
+}
+
+.popular-result-container {
+    background-color: var(--white);
+    border: 5px solid var(--white);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+}
+
+.popular-result-container img {
+    border-radius: 1.25rem 0 0 1.25rem;
+    width: 130px;
+    height: 130px;
+}
+
+.popular-infos {
+    margin: 15px 0 0 15px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.popular-infos h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.popular-infos p {
+    font-size: var(--mobile-link-size);
+    margin-bottom: 15%;
+}
+
+.result-mark i {
+    color: var(--bluetiful);
+}
+
+.four-on-five i:last-child {
+    color: var(--gainsboro);
+}
