@@ -11,13 +11,32 @@
         <!-- <link rel="stylesheet" href="./dist/css/main.min.css"> -->
     </head>
     <body>
-        <nav>
-            <div>
-                <img src="assets/logo/Reservia.svg"></img>
-            </div>
-            <div class="nav-links">
-                <div class="links-container-desk">
-                    <ul class="links">
+        <header>
+            <nav>
+                <div>
+                    <img src="assets/logo/Reservia.svg"></img>
+                </div>
+                <div class="nav-links">
+                    <div class="links-container-desk">
+                        <ul class="links">
+                            <li>
+                                <a href="#">Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#">Activités</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="register">
+                            <li>
+                                <a href="#"><strong>S'inscrire</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links-container-mobile">
+                    <ul class="links-mobile">
                         <li>
                             <a href="#">Hébergements</a>
                         </li>
@@ -26,28 +45,69 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <ul class="register">
-                        <li>
-                            <a href="#"><strong>S'inscrire</strong></a>
-                        </li>
-                    </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="filter-container">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h4>En plein centre ville ou en pleine nature</h4>
+                <form action="#">
+                    <div class="input-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Marseille, France">
+                        <button class="desktop-search-btn" type="button" value="submit">Rechercher</button>
+                        <button class="mobile-search-btn" type="button" value="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                </form>
+                <div class="filters">
+                    <h4>Filtres</h4>
+                    <div class="filters-container">
+                        <div class="button-filter-container">
+                            <i class="fas fa-money-bill-wave"></i><button>Économique</button>
+                        </div>
+                        <div class="button-filter-container">
+                            <i class="fas fa-child"></i><button>Familial</button>
+                        </div>
+                        <div class="button-filter-container">
+                            <i class="fas fa-heart"></i><button>Romantique</button>
+                        </div>
+                        <div class="button-filter-container">
+                            <i class="fas fa-dog"></i><button>Animaux autorisés</button>
+                        </div>
+                    </div>
+                    <div class="filters-info">
+                        <i class="fas fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
                 </div>
             </div>
-            <div class="links-container-mobile">
-                <ul class="links-mobile">
-                    <li>
-                        <a href="#">Hébergements</a>
-                    </li>
-                    <li>
-                        <a href="#">Activités</a>
-                    </li>
-                </ul>
+        </section>
+        <section>
+            <div class="results-container">
+                <div class="popular-container">
+                    <div class="popular-title">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="popular-results-container">
+                        <div>
+                            <img>
+                            <h6>Hôtel Le soleil du matin</h6>
+                            <p>nuit à partir de 128€</p>
+                            <div class="result-mark">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accomodation-container"></div>
             </div>
-        </nav>
-        <header></header>
-        <section></section>
-        <aside></aside>
+        </section>
         <section></section>
         <footer></footer>
         <script src="https://kit.fontawesome.com/45058126b7.js" crossorigin="anonymous"></script>
