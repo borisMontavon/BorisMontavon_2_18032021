@@ -56,6 +56,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--black);
+}
+
 /* -----Navbar styles----- */
 nav {
   width: 100vw;
@@ -377,7 +381,7 @@ nav .register li a {
   background-color: var(--cultured);
   width: 100%;
   padding: 20px 20px 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -475,7 +479,7 @@ nav .register li a {
   background-color: var(--white);
   width: 100%;
   padding: 20px 20px 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -507,8 +511,10 @@ nav .register li a {
   border: 5px solid var(--white);
   border-radius: 1.5rem;
   margin-bottom: 15px;
-  -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
+  box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -596,12 +602,6 @@ nav .register li a {
   }
 }
 
-/* .accomodation-infos {
-  margin: 15px 0 0 15px;
-  display: flex;
-  flex-flow: row wrap;
-} */
-
 .accomodation-result-container h5 {
   font-size: 1rem;
   margin: 10px 0 5px 10px;
@@ -635,4 +635,168 @@ nav .register li a {
   .show-more-accomodation:hover {
     color: var(--bluetiful);
   }
+}
+
+/* -----Activities styles----- */
+.activities-container {
+  width: 100%;
+  padding: 0 20px 25px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-container {
+    margin: 50px;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.activities-container h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-container h2 {
+    margin-bottom: 35px;
+  }
+}
+
+.activities-showoff {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-showoff {
+    height: 500px;
+  }
+}
+
+.activities-showoff-container {
+  border-radius: 1.5rem;
+  margin-bottom: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
+  box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-showoff-container {
+    width: 20%;
+    margin-bottom: 0;
+  }
+  .mb-52 {
+    margin-bottom: 52px;
+  }
+  .mb-62 {
+    margin-bottom: 62px;
+  }
+}
+
+.activities-img-1 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/vieux-port.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-1 {
+    height: 400px;
+    background-position: 48% 50%;
+  }
+}
+
+.activities-img-2 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/fort-de-pomegues.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 44%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-2 {
+    height: 180px;
+    background-position: 50% 40%;
+  }
+}
+
+.activities-img-3 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/iles-du-frioul.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-3 {
+    height: 110px;
+    background-position: 50% 15%;
+  }
+}
+
+.activities-img-4 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/parc-national-des-calanques.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-4 {
+    height: 400px;
+    background-position: 50% 50%;
+  }
+}
+
+.activities-img-5 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/notre-dame-de-la-garde.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-5 {
+    height: 140px;
+    background-position: 50% 5%;
+  }
+}
+
+.activities-img-6 {
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  height: 130px;
+  background-image: url("../../assets/images/parc-longchamp.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 28%;
+}
+
+@media screen and (min-width: 992px) {
+  .activities-img-6 {
+    height: 140px;
+    background-position: 50% 20%;
+  }
+}
+
+.activities-showoff-container h5 {
+  padding: 20px;
 }
