@@ -119,8 +119,8 @@ nav .links li a {
 }
 
 nav .links li a:hover {
-  border-top: 3px solid var(--bluetiful-o);
-  color: var(--bluetiful-o);
+  border-top: 3px solid var(--bluetiful);
+  color: var(--bluetiful);
 }
 
 nav .links li a:active {
@@ -799,4 +799,44 @@ nav .register li a {
 
 .activities-showoff-container h5 {
   padding: 20px;
+}
+
+/* -----Footer styles----- */
+footer {
+  background-color: var(--cultured);
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 50px;
+    flex-flow: row wrap;
+  }
+  footer > div {
+    margin-right: 250px;
+  }
+}
+
+footer p {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--black);
+  line-height: 30px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--bluetiful);
 }
