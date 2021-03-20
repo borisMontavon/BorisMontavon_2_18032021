@@ -21,6 +21,7 @@
 
   /* Font-size */
   --mobile-link-size: 0.85rem;
+  --tablet-link-size: 0.9rem;
   --desktop-link-size: 1rem;
 }
 
@@ -77,6 +78,12 @@ nav {
   /* background-color: lightseagreen; */
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    height: 140px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   nav {
     width: 100%;
@@ -87,6 +94,12 @@ nav {
 
 nav div img {
   padding: 15px 0 15px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  nav div img {
+    padding: 20px 0 20px 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -138,10 +151,17 @@ nav .register li a {
   font-size: var(--mobile-link-size);
 }
 
+@media screen and (min-width: 768px) {
+  nav .register li a {
+    padding-right: 40px;
+    font-size: var(--tablet-link-size);
+  }
+}
+
 @media screen and (min-width: 992px) {
   nav .register li a {
-    font-size: var(--desktop-link-size);
     padding: 0 0 0 40px;
+    font-size: var(--desktop-link-size);
   }
 }
 
@@ -178,6 +198,12 @@ nav .register li a {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 768px) {
+  .links-mobile li a {
+    font-size: var(--tablet-link-size);
+  }
+}
+
 .links-mobile li a:active {
   color: var(--bluetiful);
   border-bottom: 3px solid var(--bluetiful);
@@ -188,6 +214,12 @@ nav .register li a {
 /* Titles styles */
 .filter-container {
   margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-container {
+    margin: 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -230,6 +262,12 @@ nav .register li a {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 768px) {
+  .input-container input {
+    width: 40%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .input-container input {
     width: 15%;
@@ -241,7 +279,7 @@ nav .register li a {
     border-bottom: 1px solid var(--bluetiful-o);
 }
 
-.input-container input:focus .fa-map-marker-alt {
+.input-container input:focus + .fa-map-marker-alt {
     background-color: var(--bluetiful-o);
     color: var(--white);
 } */
@@ -257,7 +295,7 @@ nav .register li a {
   display: inline-block;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .input-container .mobile-search-btn {
     display: none;
   }
@@ -276,7 +314,7 @@ nav .register li a {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .input-container .desktop-search-btn {
     display: inline-block;
   }
@@ -388,9 +426,17 @@ nav .register li a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .popular-container {
     border-radius: 2rem;
+    margin: 40px;
+    padding: 40px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .popular-container {
     margin: 0 50px 50px;
     width: 30%;
     float: right;
@@ -403,6 +449,12 @@ nav .register li a {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-title {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -424,6 +476,15 @@ nav .register li a {
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .popular-result-container {
+    margin-bottom: 25px;
+  }
+  .popular-result-container:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -454,6 +515,14 @@ nav .register li a {
   flex-flow: row wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .popular-infos {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 20px 0 0 20px;
+  }
+}
+
 .popular-infos h5 {
   font-size: 1rem;
   margin-bottom: 5px;
@@ -465,6 +534,12 @@ nav .register li a {
 }
 
 /* Reused in accomodation-container */
+@media screen and (min-width: 768px) {
+  .result-mark {
+    margin-bottom: 10px;
+  }
+}
+
 .result-mark i {
   color: var(--bluetiful);
 }
@@ -483,16 +558,22 @@ nav .register li a {
   background-color: var(--white);
   width: 100%;
   padding: 20px 20px 25px;
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .accomodation-container {
+    background-color: var(--cultured);
+    border-radius: 2rem;
+    width: 90%;
+    padding: 40px;
+    margin: 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .accomodation-container {
-    background-color: var(--cultured);
-    border-radius: 2rem;
     margin: 50px;
     width: 60%;
-    padding: 40px;
   }
 }
 
@@ -500,13 +581,19 @@ nav .register li a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .accomodation-container h2 {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .result-container {
     display: flex;
     flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .accomodation-container h2 {
+    margin-bottom: 35px;
   }
 }
 
@@ -519,6 +606,20 @@ nav .register li a {
   flex-flow: column wrap;
   -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
   box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .result-container .accomodation-result-container {
+    width: 45%;
+  }
+  .t-ms-mb {
+    margin-left: 60px;
+    margin-bottom: 40px;
+  }
+  .t-no-ms {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -632,10 +733,13 @@ nav .register li a {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .show-more-accomodation {
     margin-top: 0;
   }
+}
+
+@media screen and (min-width: 992px) {
   .show-more-accomodation:hover {
     color: var(--bluetiful);
   }
@@ -644,8 +748,14 @@ nav .register li a {
 /* -----Activities styles----- */
 .activities-container {
   width: 100%;
-  padding: 0 20px 25px;
+  padding: 20px 20px 0;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .activities-container {
+    padding: 40px 40px 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -671,8 +781,15 @@ nav .register li a {
   flex-flow: column wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .activities-showoff {
+    flex-flow: row wrap;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .activities-showoff {
+    flex-flow: column wrap;
     height: 500px;
   }
 }
@@ -682,14 +799,27 @@ nav .register li a {
   margin-bottom: 25px;
   display: flex;
   flex-flow: column wrap;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
   box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .activities-showoff-container {
+    width: 48%;
+  }
+  .ms-25 {
+    margin-left: 25px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .activities-showoff-container {
     width: 20%;
     margin-bottom: 0;
+  }
+  .ms-20 {
+    margin-left: 0;
   }
   .mb-52 {
     margin-bottom: 52px;
@@ -713,6 +843,11 @@ nav .register li a {
   .activities-img-1 {
     height: 400px;
     background-position: 48% 50%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-1:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -730,6 +865,11 @@ nav .register li a {
   .activities-img-2 {
     height: 180px;
     background-position: 50% 40%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-2:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -747,6 +887,11 @@ nav .register li a {
   .activities-img-3 {
     height: 110px;
     background-position: 50% 15%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-3:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -764,6 +909,11 @@ nav .register li a {
   .activities-img-4 {
     height: 400px;
     background-position: 50% 50%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-4:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -781,6 +931,11 @@ nav .register li a {
   .activities-img-5 {
     height: 140px;
     background-position: 50% 5%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-5:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -798,11 +953,18 @@ nav .register li a {
   .activities-img-6 {
     height: 140px;
     background-position: 50% 20%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .activities-img-6:hover {
+    transform: scale(1.05);
   }
 }
 
 .activities-showoff-container h5 {
   padding: 20px;
+  background-color: var(--white);
+  z-index: 2;
 }
 
 /* -----Footer styles----- */
@@ -812,6 +974,16 @@ footer {
   padding: 30px 20px;
   display: flex;
   flex-flow: column wrap;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 30px 40px;
+    flex-flow: row wrap;
+  }
+  footer > div {
+    margin-right: 100px;
+  }
 }
 
 @media screen and (min-width: 992px) {
