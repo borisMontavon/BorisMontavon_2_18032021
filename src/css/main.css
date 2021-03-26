@@ -103,7 +103,7 @@ nav div img {
   }
 }
 
-.nav-links {
+#nav-links {
   display: flex;
 }
 
@@ -112,78 +112,78 @@ nav ul li {
   margin: 0 -4px;
 }
 
-nav .register li a {
+nav #register li a {
   color: var(--bluetiful);
   padding-right: 20px;
   font-size: var(--mobile-link-size);
 }
 
 @media screen and (min-width: 768px) {
-  nav .register li a {
+  nav #register li a {
     padding-right: 40px;
     font-size: var(--tablet-link-size);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  nav .register li a {
+  nav #register li a {
     padding: 0 0 0 40px;
     font-size: var(--desktop-link-size);
   }
 }
 
 /* Desktop links */
-.links-container-desk {
+#links-container-desk {
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .links-container-desk {
+  #links-container-desk {
     display: inline-block;
   }
 }
 
-nav .links li a {
+nav #links li a {
   color: var(--black);
   border-top: 5px solid transparent;
   padding: 50px 40px;
   transition: 0.3s;
 }
 
-nav .links li a:hover {
+nav #links li a:hover {
   border-top: 5px solid var(--bluetiful);
   color: var(--bluetiful);
 }
 
-nav .links li a:focus {
+nav #links li a:focus {
   border-top: 5px solid var(--bluetiful);
   color: var(--bluetiful);
 }
 
 /* Mobile links */
-.links-container-mobile {
+#links-container-mobile {
   position: sticky;
   top: 0;
   width: 100vw;
 }
 
 @media screen and (min-width: 1200px) {
-  .links-container-mobile {
+  #links-container-mobile {
     display: none;
   }
 }
 
-.links-mobile {
+#links-mobile {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.links-mobile li {
+#links-mobile li {
   text-align: center;
 }
 
-.links-mobile li a {
+#links-mobile li a {
   display: inline-block;
   font-size: var(--mobile-link-size);
   width: 50vw;
@@ -194,12 +194,12 @@ nav .links li a:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .links-mobile li a {
+  #links-mobile li a {
     font-size: var(--tablet-link-size);
   }
 }
 
-.links-mobile li a:active {
+#links-mobile li a:active {
   color: var(--bluetiful);
   border-bottom: 3px solid var(--bluetiful);
 }
@@ -207,37 +207,37 @@ nav .links li a:focus {
 /* -----Filter section styles----- */
 
 /* Titles styles */
-.filter-container {
+#filter-container {
   margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter-container {
+  #filter-container {
     margin: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .filter-container {
+  #filter-container {
     margin: 50px;
   }
 }
 
-.filter-container h4 {
+#filter-container h4 {
   font-weight: 400;
   font-size: var(--mobile-link-size);
   padding-top: 10px;
 }
 
 /* Searchbar styles */
-.input-container {
+#input-container {
   width: 100%;
   margin: 30px 0;
   display: flex;
   position: relative;
 }
 
-.input-container .fa-map-marker-alt {
+#input-container .fa-map-marker-alt {
   padding: 15px;
   background-color: var(--cultured);
   color: var(--black);
@@ -245,7 +245,7 @@ nav .links li a:focus {
   transition: 0.3s;
 }
 
-.input-container input {
+#input-container input {
   width: 80%;
   padding: 15px 20px;
   border: 1px solid var(--cultured);
@@ -259,13 +259,13 @@ nav .links li a:focus {
 
 @media screen and (min-width: 768px),
 screen and (max-width: 768px) and (orientation: landscape) {
-  .input-container input {
+  #input-container input {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .input-container input {
+  #input-container input {
     width: 15%;
   }
 }
@@ -277,7 +277,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
   color: var(--white);
 }
 
-.input-container .mobile-search-btn {
+#input-container #mobile-search-btn {
   border-radius: 0.75rem;
   position: absolute;
   right: 0px;
@@ -286,12 +286,12 @@ screen and (max-width: 768px) and (orientation: landscape) {
 
 @media screen and (min-width: 768px),
 screen and (max-width: 768px) and (orientation: landscape) {
-  .input-container .mobile-search-btn {
+  #input-container #mobile-search-btn {
     display: none;
   }
 }
 
-.input-container .desktop-search-btn {
+#input-container #desktop-search-btn {
   border-radius: 0 0.75rem 0.75rem 0;
   font-family: var(--raleway);
   font-weight: bold;
@@ -302,29 +302,29 @@ screen and (max-width: 768px) and (orientation: landscape) {
 
 @media screen and (min-width: 768px),
 screen and (max-width: 768px) and (orientation: landscape) {
-  .input-container .desktop-search-btn {
+  #input-container #desktop-search-btn {
     display: inline-block;
   }
-  .input-container .desktop-search-btn:hover {
+  #input-container #desktop-search-btn:hover {
     background-color: var(--bluetiful-o);
     border: 1px solid transparent;
   }
 }
 
 /* Filter styles */
-.filters h4 {
+#filters h4 {
   font-size: var(--mobile-link-size);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .filters h4 {
+  #filters h4 {
     font-size: var(--desktop-link-size);
   }
 }
 
-.filters-container {
+#filters-container {
   display: flex;
   flex-flow: row wrap;
 }
@@ -370,19 +370,19 @@ screen and (max-width: 768px) and (orientation: landscape) {
   align-items: center;
 }
 
-.filters-info {
+#filters-info {
   margin-top: 15px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-.filters-info p {
+#filters-info p {
   font-size: var(--mobile-link-size);
   margin-left: 10px;
 }
 
-.filters-info i {
+#filters-info i {
   padding: 5px;
   border-radius: 25px;
   width: 25px;
@@ -398,7 +398,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 /* -----Results section styles----- */
 
 /* Popular styles */
-.popular-container {
+#popular-container {
   background-color: var(--cultured);
   width: 100%;
   padding: 20px 20px 25px;
@@ -406,7 +406,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  .popular-container {
+  #popular-container {
     border-radius: 2rem;
     margin: auto;
     padding: 40px;
@@ -415,7 +415,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 768px) {
-  .popular-container {
+  #popular-container {
     border-radius: 2rem;
     margin: auto;
     padding: 40px;
@@ -424,7 +424,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 1200px) {
-  .popular-container {
+  #popular-container {
     margin: 0 50px 50px;
     width: 30%;
     float: right;
@@ -432,7 +432,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
   }
 }
 
-.popular-title {
+#popular-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -440,18 +440,18 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 768px) {
-  .popular-title {
+  #popular-title {
     margin-bottom: 25px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .popular-title {
+  #popular-title {
     margin-bottom: 35px;
   }
 }
 
-.popular-title i {
+#popular-title i {
   font-size: 1.4rem;
 }
 
@@ -548,14 +548,14 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 /* Accomodation container */
-.accomodation-container {
+#accomodation-container {
   background-color: var(--white);
   width: 100%;
   padding: 20px 20px 25px;
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  .accomodation-container {
+  #accomodation-container {
     background-color: var(--cultured);
     border-radius: 2rem;
     width: 94%;
@@ -565,7 +565,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 768px) {
-  .accomodation-container {
+  #accomodation-container {
     background-color: var(--cultured);
     border-radius: 2rem;
     width: 90%;
@@ -575,21 +575,21 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 1200px) {
-  .accomodation-container {
+  #accomodation-container {
     margin: 50px;
     width: 60%;
   }
 }
 
-.accomodation-container h2 {
+#accomodation-container h2 {
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .accomodation-container h2 {
+  #accomodation-container h2 {
     margin-bottom: 25px;
   }
-  .result-container {
+  #result-container {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(2, minmax(0, 1fr));;
@@ -600,7 +600,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
   .accomodation-container h2 {
     margin-bottom: 35px;
   }
-  .result-container {
+  #result-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -617,37 +617,37 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 768px) {
-  .result-container .accomodation-result-container {
+  #result-container .accomodation-result-container {
     margin-bottom: 0;
   }
 }
 
-.accomodation-result-container .result-1 {
+.accomodation-result-container #result-1 {
   background-image: url("../../assets/images/auberge-la-cannebiere.webp");
   background-position-y: 50%;
 }
 
-.accomodation-result-container .result-2 {
+.accomodation-result-container #result-2 {
   background-image: url("../../assets/images/hotel-du-port.webp");
   background-position-y: 48%;
 }
 
-.accomodation-result-container .result-3 {
+.accomodation-result-container #result-3 {
   background-image: url("../../assets/images/hotel-les-mouettes.webp");
   background-position-y: 48%;
 }
 
-.accomodation-result-container .result-4 {
+.accomodation-result-container #result-4 {
   background-image: url("../../assets/images/hotel-de-la-mer.webp");
   background-position-y: 50%;
 }
 
-.accomodation-result-container .result-5 {
+.accomodation-result-container #result-5 {
   background-image: url("../../assets/images/auberge-le-panier.webp");
   background-position-y: 47%;
 }
 
-.accomodation-result-container .result-6 {
+.accomodation-result-container #result-6 {
   
   background-image: url("../../assets/images/hotel-chez-amina.webp");
   background-position-y: 10%;
@@ -681,7 +681,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
   margin: 10px 0 10px 10px;
 }
 
-.show-more-accomodation {
+#show-more-accomodation {
   font-family: var(--raleway);
   border: none;
   background: transparent;
@@ -694,50 +694,50 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 768px) {
-  .show-more-accomodation {
+  #show-more-accomodation {
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .show-more-accomodation:hover {
+  #show-more-accomodation:hover {
     color: var(--bluetiful);
   }
 }
 
 /* -----Activities styles----- */
-.activities-container {
+#activities-container {
   width: 100%;
   padding: 20px 20px 0;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .activities-container {
+  #activities-container {
     padding: 40px 40px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-container {
+  #activities-container {
     margin: 50px;
     padding: 0;
     width: auto;
   }
 }
 
-.activities-container h2 {
+#activities-container h2 {
   margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-container h2 {
+  #activities-container h2 {
     margin-bottom: 35px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .activities-showoff {
+  #activities-showoff {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -745,7 +745,7 @@ screen and (max-width: 768px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-showoff {
+  #activities-showoff {
     grid-gap: 40px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -765,127 +765,127 @@ screen and (max-width: 768px) and (orientation: landscape) {
   .activities-showoff-container {
     margin-bottom: 0;
   }
-  .asc-1 {
+  #asc-1 {
     grid-row: 1 / 3;
   }
-  .asc-3 {
+  #asc-3 {
     margin-top: auto;
   }
-  .asc-4 {
+  #asc-4 {
     grid-row: 1 / 3;
     grid-column: 3 / 4;
   }
-  .asc-5 {
+  #asc-5 {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
     height: 195px;
   }
 }
 
-.activities-img-1 {
+#activities-img-1 {
   height: 130px;
   background-image: url("../../assets/images/vieux-port.webp");
   background-position: 50% 25%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-1 {
+  #activities-img-1 {
     height: 400px;
     background-position: 48% 50%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-1:hover {
+  #activities-img-1:hover {
     transform: scale(1.05);
   }
 }
 
-.activities-img-2 {
+#activities-img-2 {
   height: 130px;
   background-image: url("../../assets/images/fort-de-pomegues.webp");
   background-position: 50% 44%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-2 {
+  #activities-img-2 {
     height: 180px;
     background-position: 50% 45%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-2:hover {
+  #activities-img-2:hover {
     transform: scale(1.05);
   }
 }
 
-.activities-img-3 {
+#activities-img-3 {
   height: 130px;
   background-image: url("../../assets/images/iles-du-frioul.webp");
   background-position: 50% 25%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-3 {
+  #activities-img-3 {
     height: 110px;
     background-position: 50% 30%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-3:hover {
+  #activities-img-3:hover {
     transform: scale(1.05);
   }
 }
 
-.activities-img-4 {
+#activities-img-4 {
   height: 130px;
   background-image: url("../../assets/images/parc-national-des-calanques.webp");
   background-position: 50% 25%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-4 {
+  #activities-img-4 {
     height: 400px;
     background-position: 50% 50%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-4:hover {
+  #activities-img-4:hover {
     transform: scale(1.05);
   }
 }
 
-.activities-img-5 {
+#activities-img-5 {
   height: 130px;
   background-image: url("../../assets/images/notre-dame-de-la-garde.webp");
   background-position: 50% 20%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-5 {
+  #activities-img-5 {
     height: 140px;
     background-position: 50% 5%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-5:hover {
+  #activities-img-5:hover {
     transform: scale(1.05);
   }
 }
 
-.activities-img-6 {
+#activities-img-6 {
   height: 130px;
   background-image: url("../../assets/images/parc-longchamp.webp");
   background-position: 50% 28%;
 }
 
 @media screen and (min-width: 1200px) {
-  .activities-img-6 {
+  #activities-img-6 {
     height: 140px;
     background-position: 50% 35%;
     transition: 0.3s;
     z-index: 1;
   }
-  .activities-img-6:hover {
+  #activities-img-6:hover {
     transform: scale(1.05);
   }
 }
