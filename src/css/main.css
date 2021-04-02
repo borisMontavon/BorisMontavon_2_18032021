@@ -87,18 +87,18 @@ nav {
   }
 }
 
-nav div img {
+nav a img {
   padding: 15px 0 15px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  nav div img {
+  nav a img {
     padding: 20px 0 20px 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  nav div img {
+  nav a img {
     padding: 0;
   }
 }
@@ -912,12 +912,14 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
+  font-size: var(--tablet-link-size);
 }
 
 @media (orientation: landscape) {
   footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
     text-align: left;
   }
 }
@@ -932,6 +934,7 @@ footer {
   footer {
     padding: 50px;
     align-items: flex-start;
+    font-size: var(--desktop-link-size);
   }
 }
 
