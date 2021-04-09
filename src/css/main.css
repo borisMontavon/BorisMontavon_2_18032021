@@ -100,11 +100,18 @@ nav a img {
 @media screen and (min-width: 1200px) {
   nav a img {
     padding: 0;
+    border-top: 5px solid transparent;
   }
 }
 
-#nav-links {
+#nav-link {
   display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  #nav-link {
+    border-top: 5px solid transparent;
+  }
 }
 
 nav ul li {
@@ -132,58 +139,31 @@ nav #register li a {
   }
 }
 
-/* Desktop links */
-#links-container-desk {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  #links-container-desk {
-    display: inline-block;
-  }
-}
-
-nav #links li a {
-  color: var(--black);
-  border-top: 5px solid transparent;
-  padding: 50px 40px;
-  transition: 0.3s;
-}
-
-nav #links li a:hover {
-  border-top: 5px solid var(--bluetiful);
-  color: var(--bluetiful);
-}
-
-nav #links li a:focus {
-  border-top: 5px solid var(--bluetiful);
-  color: var(--bluetiful);
-}
-
-/* Mobile links */
-#links-container-mobile {
-  position: sticky;
-  top: 0;
+/* Navigation/anchor links */
+#links-container {
   width: 100vw;
 }
 
 @media screen and (min-width: 1200px) {
-  #links-container-mobile {
-    display: none;
+  #links-container {
+    width: 17vw;
+    position: absolute;
+    top: 0;
+    right: 175px;
   }
 }
 
-#links-mobile {
+#links {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#links-mobile li {
+#links li {
   text-align: center;
 }
 
-#links-mobile li a {
+#links li a {
   display: inline-block;
   font-size: var(--mobile-link-size);
   width: 50vw;
@@ -193,15 +173,34 @@ nav #links li a:focus {
   transition: 0.3s;
 }
 
+#links li a:active {
+  color: var(--bluetiful);
+  border-bottom: 3px solid var(--bluetiful);
+}
+
 @media screen and (min-width: 768px) {
-  #links-mobile li a {
+  #links li a {
     font-size: var(--tablet-link-size);
   }
 }
 
-#links-mobile li a:active {
-  color: var(--bluetiful);
-  border-bottom: 3px solid var(--bluetiful);
+@media screen and (min-width: 1200px) {
+  #links li a {
+    font-size: var(--desktop-link-size);
+    border-top: 5px solid transparent;
+    border-bottom: none;
+    padding: 50px 40px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  #links li a:hover {
+    border-top: 5px solid var(--bluetiful);
+    color: var(--bluetiful);
+  }
+  nav #links li a:focus {
+    border-top: 5px solid var(--bluetiful);
+    color: var(--bluetiful);
+  }
 }
 
 /* -----Filter section styles----- */
